@@ -13,7 +13,8 @@ app.use(express.json())
 
 
 // DB config
-mongoose.connect("mongodb+srv://admin:0t6678uW0qDhOnEM@cluster0.wjf87p4.mongodb.net/?retryWrites=true&w=majority")
+const DB_URL ="mongodb+srv://admin:0t6678uW0qDhOnEM@cluster0.wjf87p4.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(DB_URL)
 .then(() => console.log("DB is connected"))
 
 // Api Routes
