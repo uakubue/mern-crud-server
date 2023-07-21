@@ -13,7 +13,8 @@ app.use(express.json())
 
 
 // DB config
-mongoose.connect("mongodb://localhost:27017/crud").then(() => console.log("DB is connected"))
+mongoose.connect("mongodb+srv://admin:0t6678uW0qDhOnEM@cluster0.wjf87p4.mongodb.net/?retryWrites=true&w=majority")
+.then(() => console.log("DB is connected"))
 
 // Api Routes
 app.post("/createUser", (req,res) => {
